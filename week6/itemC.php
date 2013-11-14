@@ -33,6 +33,19 @@ and open the template in the editor.
          */
         
         // put your code here
+        
+        $_SESSION['auth'] = false;
+        if ( isset($_POST["passcode"]) && $_POST["passcode"] == "demo"){
+             $_SESSION['auth'] = true;
+             
+             header("location:itemD.php"); 
+             
+        }
+        
+        
+        
+        
+        
         ?>
         
         <form action="#" method="post">
