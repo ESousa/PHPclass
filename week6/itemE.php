@@ -37,6 +37,33 @@ and open the template in the editor.
 
         
         // put your code here
+        
+        
+        if (count($result) ){
+            echo '<table border="1">';
+            echo '<tr> <td> Name </td> <td> Address </td> <td> City </td> <td> State </td> <td> Zip </td></tr>';
+                 foreach ($result as $value){
+                    echo '<tr>';
+                    echo '<td>',$value['name'],'</td>';
+                    echo '<td>',$value['address'],'</td>';
+                    echo '<td>',$value['city'],'</td>';
+                    echo '<td>',$value['state'],'</td>';
+                    echo '<td>',$value['zip'],'</td>';
+                    echo '</tr>';                
+                                    }
+                    echo '</table>';
+            
+        }           else
+                                    {
+                    echo "No data";
+        }
+        
+        
+        
+        
+        
+        
+        
         ?>
     </body>
 </html>
