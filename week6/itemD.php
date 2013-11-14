@@ -36,6 +36,14 @@ and open the template in the editor.
         */
        
         // put your code here
+        print_r($_POST);
+        
+        if(array_key_exists('signup', $_POST)){
+            echo'signup submitted';
+        }
+         if(array_key_exists('login', $_POST)){
+            echo'login submitted';
+         }
         ?>
         
         <h1>Signup</h1>
