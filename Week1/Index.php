@@ -7,77 +7,52 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+            <title></title>
     </head>
     <body>
         
-        <?php
-        
-        $dbh = new PDO("mysql:host=localhost;port=3306;dbname=testdb","root","");
-        
-       // $stmt = $dbh->prepare('insert into week2 set fullname = "test", email = "test@test.com", comments = "commtents added"');
-         //$stmt->execute();
-         $stmt = $dbh->prepare('SELECT * FROM week2');
-         $stmt->execute();
-        
-         
-          $result = $stmt->fetchAll();
- 
-  if ( count($result) ) {
-    foreach($result as $row) {
-      print_r($row);
-    }  
-  } else {
-    echo "No rows returned.";
-  }
-  
-        var_dump($stmt);
-        
-            // placeholder for field name values   
-            $fullnameValue = "";
-            $emailValue = "";
-            $comments = "";
-        
-            
-            $fullnameErr = "";
-            $emailErr = "";
-            $commentsErr = "";
-            
-           // var_dump($_POST);
-            
-            
-            if ( count($_GET) ) {
-            
-                var_dump($_GET);
-            }
-            
-            
-            if ( count($_POST) ) {
-                
-                if ( !array_key_exists("fullname", $_POST) || empty($_POST["fullname"]) ) {
-                   $fullnameErr = "Please enter your full name";                   
-                } else {
-                     $fullnameValue = $_POST["fullname"];
-                }
-                
-                
-                if ( !array_key_exists("comments", $_POST) || empty($_POST["comments"]) ) {
-                   $commentsErr = "Please enter your comments";                   
-                } else {
-                   $comments = $_POST["comments"];
-                }
-                
-                
-                 if ( !array_key_exists("email", $_POST) || empty($_POST["email"]) ) {
-                     $emailErr = "Please enter your email";                   
-                } else {
-                     $emailValue = $_POST["email"];
-                }
-                 
-                
-            }
-       
-        ?>
+ <?php
+
+$arr = array("one", "two", "three", "four");
+$arr = array("0" => "one","1" => "two","2" => "three","3" => "4","four");
+$array = array("fname" => "Eric",
+			   "lname" => "Sousa",
+			   "email" => "e_dsl23@comcast.net",
+			   "telephone" => "555-5555");
+			   
+			   
+foreach( $array as $key => $value){
+echo $key."\t=>\t" .$value."\n";
+}
+
+
+
+print_r($array);
+
+var_dump(fullname);
+	
+	
+	$arraymulti = array(
+						array("one1","two2","three3"),
+						array("one1","two2","three3"),
+						array("one1","two2","three3");
+						
+						
+						
+//strip tags
+$computer = '<p> Boston RedSox won the World Series.</p> <!--Who wouldve thought-->';
+echo strip_tags($computer);
+echo "\n";			
+			
+						
+//explode
+$nameArray = explode(" ", $fullname);
+echo $nameArray[0] . " - " . $nameArray[1];						
+						
+						
+						
+	
+?>
         
         <h1> Contact Form </h1>
         <form name="mainform" method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">            
