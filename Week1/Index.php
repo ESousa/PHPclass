@@ -66,6 +66,12 @@ echo str_shuffle($text);
  $text = "Netbeans needs debugging";
  echo ord($text);
  
+ //ucwords 
+ $text = "this is a test";
+ echo ucwords($text);
+ 
+ 
+ 
 						
 	
 ?>
