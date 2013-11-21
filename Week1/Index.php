@@ -54,14 +54,18 @@ $text = "The Patriots got ripped off Monday night";
 echo trim($text);	
         
         
- //strlen 
+//strlen 
 $text = "Hi how are you";
 echo strlen($text);     
         
- //str_shuffle 
- $text = "The weather is getting fridge";
- echo str_shuffle($text);       
+//str_shuffle 
+$text = "The weather is getting fridge";
+echo str_shuffle($text);       
         
+ //ord 
+ $text = "Netbeans needs debugging";
+ echo ord($text);
+ 
 						
 	
 ?>
