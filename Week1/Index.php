@@ -49,7 +49,9 @@ echo "\n";
 $nameArray = explode(" ", $fullname);
 echo $nameArray[0] . " - " . $nameArray[1];						
 						
-						
+//trim can remove charecters from a string 
+        $text = "           this is a text string";
+        echo trim($text);						
 						
 	
 ?>
