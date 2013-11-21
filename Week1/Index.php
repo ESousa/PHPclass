@@ -49,9 +49,19 @@ echo "\n";
 $nameArray = explode(" ", $fullname);
 echo $nameArray[0] . " - " . $nameArray[1];						
 						
-//trim can remove charecters from a string 
-        $text = "           this is a text string";
-        echo trim($text);						
+//trim  
+$text = "The Patriots got ripped off Monday night";
+echo trim($text);	
+        
+        
+ //strlen 
+$text = "Hi how are you";
+echo strlen($text);     
+        
+ //str_shuffle 
+ $text = "The weather is getting fridge";
+ echo str_shuffle($text);       
+        
 						
 	
 ?>
