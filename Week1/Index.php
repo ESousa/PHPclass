@@ -71,6 +71,21 @@ echo str_shuffle($text);
  echo ucwords($text);
  
  
+ //array_count_values
+ $array = array(1, "", 1, "", "");
+ print_r(array_count_values($array));
+ 
+ //array_push
+ $test = array("Denver", "NewEngland", "Chicago");
+ array_push($test, "Broncos", "Patriots", "Bears");
+ print_r($test);
+ 
+ //shuffle
+ $numbers = range(1, 20);
+ shuffle($numbers);
+    foreach ($numbers as $chaneup){
+        echo "$changeup";
+ }
  
 						
 	
