@@ -98,8 +98,8 @@ echo str_shuffle($text);
  //shuffle
  $numbers = range(1, 20);
  shuffle($numbers);
-    foreach ($numbers as $chaneup){
-        echo "$changeup";
+    foreach ($numbers as $switched){
+        echo "$switched";
  }
  
 						
