@@ -80,6 +80,21 @@ echo str_shuffle($text);
  array_push($test, "Broncos", "Patriots", "Bears");
  print_r($test);
  
+ //array_rand
+ $input = array ("FallRiver","Dartmouth","Westport","Somerset","Swansea");
+ $rand_keys = array_rand($input, 2);
+ echo $input [$rand_keys[0]] . "\n";
+ echo $input [$rand_keys[1]] . "\n";
+ 
+ 
+ //sort
+  $Team = array("Celtics", "Heat", "Lakers", "Mavericks");
+  sort($Team);
+  foreach ($Team as $key => $name) {
+  echo "Team[" . $key . "] = " . $name . "\n";
+  }
+ 
+ 
  //shuffle
  $numbers = range(1, 20);
  shuffle($numbers);
