@@ -20,13 +20,11 @@
         session_start();
         session_regenerate_id(true);
         
-         /*
-         * If user is logged in redirect to admin page.
-         */
-       /* if($_SESSION["isLoggedIn"] == true){
+         
+        if($_SESSION["isLoggedIn"] == true){
             header("Location:admin.php");
-        }*/
-        /*inputting the classes Config and Validator*/
+        }
+        
         
         
         include "Config.php";
