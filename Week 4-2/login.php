@@ -20,6 +20,15 @@
         session_start();
         session_regenerate_id(true);
         
+         /*
+         * If user is logged in redirect to admin page.
+         */
+       /* if($_SESSION["isLoggedIn"] == true){
+            header("Location:admin.php");
+        }*/
+        /*inputting the classes Config and Validator*/
+        
+        
         include "Config.php";
         include "Validator.php";
         
@@ -63,10 +72,15 @@ if(!empty($username)
  }
      else 
  {
-                
+                 /*
+                 * the if statement is checking the post of either username or password to see if its present or if its correct 
+                 * if it isnt correct than the error message will pop up
+                 */   
+         
+     if (count($_POST)){
      echo "<p>Username or password is not correct</p>";
  }
-           
+ }      
            ?>
         
         <form name="mainform" action="login.php" method="post">

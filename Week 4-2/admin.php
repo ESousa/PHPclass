@@ -11,7 +11,7 @@
 <?php
     session_start();
     session_regenerate_id();
-    print_r($_GET);
+    
     
     
 if  ( empty($_SESSION["isLoggedIn"] ) ){
