@@ -100,6 +100,12 @@ echo str_shuffle($text);
  shuffle($numbers);
     foreach ($numbers as $switched){
         echo "$switched";
+        
+        
+  //htmlentities
+  $entities = "Im soooo <b>tired</b>" ;
+  echo htmlentities($entities);     
+        
  }
  
 						
