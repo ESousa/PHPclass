@@ -105,16 +105,4 @@ echo str_shuffle($text);
 						
 	
 ?>
-        
-        <h1> Contact Form </h1>
-        <form name="mainform" method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">            
-            <label>Name</label> <input type="text" name="fullname" value="<?php echo $fullnameValue;?>" /> <?php echo $fullnameErr ?> <br />
-            <label>Email</label> <input type="text" name="email" value="<?php echo $emailValue;?>" /> <?php echo $emailErr ?> <br />
-            <label>Comments</label> <textarea name="comments"><?php echo $comments;?></textarea> <?php echo $commentsErr ?> <br />
-            <br />
-            <input type="submit" value="Submit" />
-        </form>
-        
-        
-    </body>
-</html>
+     
