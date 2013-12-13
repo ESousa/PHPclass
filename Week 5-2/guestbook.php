@@ -20,10 +20,13 @@ and open the template in the editor.
         $gb = new Guestbook();
         
         if(! $gb->processGuestbook()){
-            echo "there's an issue\t ";
+            echo "error\t ";
         }
         $gb->displayGuestbook();        
         ?>
+        
+        
+        
         <div id="form">
         <form action="#" method="post">
              Name: <input type="text" name="name" value=""/> 
@@ -36,6 +39,8 @@ and open the template in the editor.
         </form>
         </div>
         <style>
+        
+        
             body{
                 text-align:center;
                 color: whitesmoke;
