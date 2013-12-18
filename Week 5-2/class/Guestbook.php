@@ -24,7 +24,7 @@ class Guestbook {
         
         
         if (NULL != $db){
-            $stmt = $db->prepare('select name, email, comments from guestbook');
+            $stmt = $db->prepare('select name, email, guestbook comments);
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             
