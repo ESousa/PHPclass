@@ -138,6 +138,7 @@ echo str_shuffle($text);
         }
            
         
+        
      for ($td=1; $td<=$col; $td++){
          $today = date("F, j, Y, g:i a");
          echo "<td>" .$date. " ".token(). "</td>";
