@@ -14,8 +14,9 @@
 class Validator {
     //put your code here
     
-    public static function emailIsValid( $str ) {
-       if ( is_string($str) && !empty($str) && preg_match("/[A-Za-z0-9_]{2,}+@[A-Za-z0-9_]{2,}+\.[A-Za-z0-9_]{2,}/",$str) != 0 ) {
+public static function emailIsValid( $str ) {
+    if ( is_string($str) && !empty($str) && preg_match
+                        ("/[A-Za-z0-9_]{2,}+@[A-Za-z0-9_]{2,}+\.[A-Za-z0-9_]{2,}/",$str) != 0 ) {
            return true;
        }        
        return false; 

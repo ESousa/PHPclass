@@ -103,7 +103,7 @@ echo str_shuffle($text);
         
         
   //htmlentities
-  $entities = "Im soooo <b>tired</b>" ;
+  $entities = "Hi <b>my name is</b>" ;
   echo htmlentities($entities);     
         
  }
