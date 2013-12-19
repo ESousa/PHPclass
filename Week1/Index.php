@@ -108,6 +108,44 @@ echo str_shuffle($text);
         
  }
  
+ 
+ //e.Create an HTML table with 100 rows.  For each alternate row have the background color
+ // be set to silver.   You can apply a class to each alternate row.  
+ // Do not use CSS tricks.  Output the row number, execute the token function and display 
+ // the date and time.
+ 
+
+ function token() {
+     
+     return sha1( uniqid(mt_rand(), true));
+ }
+ 
+ date_default_timezone_set('America/New_York');
+ 
+ $rows = 100;
+ $col = 1;
+ 
+ echo "<table border='1'>";
+ 
+ for($tr=1; $tr <=$rows;$tr++){
+     if (($tr % 2) == 0)
+     {
+         echo "<tr bgcolor=#E6E6E6>";
+     }
+        else
+        {
+         echo "<tr bgcolor=#FFFFFF>";
+        }
+        
+     for ($td=1; $td<=$col; $td++){
+         $today = date("F, j, Y, g:i a");
+         echo "<td>" .$date. " ".token(). "</td>";
+     }
+     
+     echo "</tr>";
+ }
+ 
+     echo "</table>";
 						
 	
 ?>
