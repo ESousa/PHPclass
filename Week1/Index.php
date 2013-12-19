@@ -148,7 +148,17 @@ echo str_shuffle($text);
  }
  
      echo "</table>";
-						
+	
+     
+     //f.Create 2 arrays.  One with a list of colors and the other with a list of phrases.  
+     //Get a random color and phrase to display on every page load.
+     
+     function getRandom()
+     {
+         return rand(0, 5);
+     }
+     
+    
 	
 ?>
      
