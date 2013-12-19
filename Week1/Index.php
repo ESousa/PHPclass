@@ -136,6 +136,7 @@ echo str_shuffle($text);
         {
          echo "<tr bgcolor=#FFFFFF>";
         }
+           
         
      for ($td=1; $td<=$col; $td++){
          $today = date("F, j, Y, g:i a");
